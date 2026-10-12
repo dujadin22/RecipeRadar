@@ -36,3 +36,15 @@ export async function getRandomRecipe() {
         return null;
     }
 }
+
+// Fetch all meal categories for filter buttons
+export async function getCategories() {
+    try {
+        const response = await fetch(`${BASE_URL}categories.php`);
+        const data = await response.json();
+        return data.categories || [];
+    } catch (error) {
+        console.error('Error fetching categories:', error);
+        return [];
+    }
+}
