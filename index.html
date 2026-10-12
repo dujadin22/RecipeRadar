@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeRadar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🍳 Recipe<span>Radar</span></div>
+        <nav class="nav-links">
+            <a href="#" class="active">Search</a>
+            <a href="#">Saved Favorites</a>
+            <a href="#">Surprise Me</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h1>Discover Delicious Recipes</h1>
+            <p>Find meals, ingredients, and inspiration instantly[cite: 1].</p>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search for a dish or ingredient (e.g., chicken, pasta)..." required>
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </section>
+
+        <section id="results-container" class="recipe-grid">
+            <!-- Dynamic recipe cards will load here -->
+        </section>
+    </main>
+
+    <!-- Modular JavaScript Entry Point -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
